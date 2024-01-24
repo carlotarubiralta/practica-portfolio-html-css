@@ -1,0 +1,8 @@
+:root {
+    --bg-color: #000;
+    --main-text-color: #FFF;
+    --main-brand-color: #FFD700;
+    font-size: 16px;
+    font-family: sans-serif;
+    --main-primary-color: #00ffff80;
+}
