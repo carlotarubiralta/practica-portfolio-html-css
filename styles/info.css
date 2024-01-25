@@ -1,5 +1,8 @@
-.about h1 {
+.about h1, h2 {
     text-align: center;
+}
+.about h2 {
+    padding-top: 1rem;
 }
 .about {
     display: inline-flex;
@@ -21,6 +24,100 @@
 .about p {
     text-align: justify;
 }
+
+.skills {
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    width: 100%;
+    right: auto;
+    left: auto;
+}
+.skills .container {
+    margin: 10px auto;
+    text-align: center;
+    width:10vw;
+    padding: 0 1vw;
+}
+.container p {
+    text-align: center;
+}
+.progress {
+    padding: 6px;
+    border-radius: 30px;
+    background: var(--main-text-color);
+    /*box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);*/
+
+}
+.progress__bar {
+    height: 5px;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom, #bcf3f8, var(--main-primary-color));
+        transition: 0.4s linear;
+    transition-property: width, background-color;
+}
+.progress__moved .progress__bar {
+    width: 80%; 
+    background-color: var(--main-primary-color);  
+    animation: progressAnimation 4s;
+    box-shadow: 0 0 5px #0eccde, 0 0 10px #0eccde, 0 0 20px #0eccde, 0 0 40px #21ebff, 0 0 80px #21ebff;
+  }
+  @keyframes progressAnimation {
+    0%   { width: 5%; background-color:#ffffff; }
+    100% { width: 80%; background-color: var(--main-primary-color); }
+  }
+  .progress__moved__2 .progress__bar {
+    width: 90%; 
+    background-color: var(--main-primary-color);  
+    animation: progressAnimation__2 4s;
+    box-shadow: 0 0 5px #0eccde, 0 0 10px #0eccde, 0 0 20px #0eccde, 0 0 40px #21ebff, 0 0 80px #21ebff;
+  }
+  @keyframes progressAnimation__2 {
+    0%   { width: 5%; background-color:#ffffff; }
+    100% { width: 90%; background-color: var(--main-primary-color); }
+  }
+  .progress__moved__3 .progress__bar {
+    width: 60%; 
+    background-color: var(--main-primary-color);  
+    animation: progressAnimation__3 4s;
+    box-shadow: 0 0 5px #0eccde, 0 0 10px #0eccde, 0 0 20px #0eccde, 0 0 40px #21ebff, 0 0 80px #21ebff;
+  }
+  @keyframes progressAnimation__3 {
+    0%   { width: 5%; background-color:#ffffff; }
+    100% { width: 60%; background-color: var(--main-primary-color); }
+  }
+  .progress__moved__4 .progress__bar {
+    width: 100%; 
+    background-color: var(--main-primary-color);  
+    animation: progressAnimation__4 4s;
+    box-shadow: 0 0 5px #0eccde, 0 0 10px #0eccde, 0 0 20px #0eccde, 0 0 40px #21ebff, 0 0 80px #21ebff;
+  }
+  @keyframes progressAnimation__4 {
+    0%   { width: 5%; background-color:#ffffff; }
+    100% { width: 100%; background-color: var(--main-primary-color); }
+  }
+  .progress__moved__5 .progress__bar {
+    width: 70%; 
+    background-color: var(--main-primary-color);  
+    animation: progressAnimation__5 4s;
+    box-shadow: 0 0 5px #0eccde, 0 0 10px #0eccde, 0 0 20px #0eccde, 0 0 40px #21ebff, 0 0 80px #21ebff;
+  }
+  @keyframes progressAnimation__5 {
+    0%   { width: 5%; background-color:#ffffff; }
+    100% { width: 70%; background-color: var(--main-primary-color); }
+  }
+  .progress__moved__6 .progress__bar {
+    width: 80%; 
+    background-color: var(--main-primary-color);  
+    animation: progressAnimation__6 4s;
+    box-shadow: 0 0 5px #0eccde, 0 0 10px #0eccde, 0 0 20px #0eccde, 0 0 40px #21ebff, 0 0 80px #21ebff;
+  }
+  @keyframes progressAnimation__6 {
+    0%   { width: 5%; background-color:#ffffff; }
+    100% { width: 80%; background-color: var(--main-primary-color); }
+  }
+
 @media (width > 768px) {
     .about {
         display: flex;
@@ -40,7 +137,11 @@
         width: 80%;
         height: auto;
     }
-    
-    
-
+    .skills {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        
+    }
 }
