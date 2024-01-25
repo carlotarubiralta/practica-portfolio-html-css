@@ -4,5 +4,10 @@
     --main-brand-color: #FFD700;
     font-size: 16px;
     font-family: sans-serif;
-    --main-primary-color: #00ffff80;
+    --main-primary-color: #21ebff;
+}
+
+html {
+    background-color: var(--bg-color);
+    color: var(--main-text-color);
 }
