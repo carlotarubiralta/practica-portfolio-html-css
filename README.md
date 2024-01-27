@@ -18,7 +18,10 @@ Este proyecto consiste en la creación de un portfolio personal como parte del e
 - **Página Adicional con Video**: Incluye un video con animación de fadeIn al cargar la página.
 - **Grid con Proyectos**: Muestra de proyectos en un diseño de grid.
 - **Opciones Adicionales**: Menú burger solo con CSS, despliegue en GitHub Pages, y páginas de error 404 y 500 (opcionales).
-
+- **Páginas de Error Personalizadas**:
+  - **404.html**: Página personalizada para el error 404 con su hoja de estilo `404.css`.
+    - **500.html**: Página personalizada para errores 5xx con su hoja de estilo `500.css`.
+    
 ## Implementación Técnica
 
 - **Estructura Semántica**: Uso de etiquetas HTML para estructurar el contenido de manera semántica.
