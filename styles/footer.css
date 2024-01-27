@@ -1,19 +1,29 @@
 
 .footer {
-    margin-top: 200px;
+
     padding-top: 20px;
-            /* T - R  - B  - L*/
     padding: 20px 30px 20px 30px;
-            /* Y - X */
     padding: 20px 30px;
-          /* todos los lados */
     padding: 1.25rem 30%;
     padding: 1.25rem 0;
     text-align: center;
-    font-style: italic;
-    /*
-    rem / em
-    1rem - 16px
-    */
     font-size: 1rem;
+    background-color: var(--main-brand-color);
+  }
+  .fa-brands {
+        color: #fff;
+        font-size: 2rem;
+        margin-left:1rem;
+  }
+
+  @media (hover: hover) {
+        .fa-brands:hover {
+                color: #000;
+        }
+  }
+
+  @media (width > 768px) {
+        .fa-brands {
+                margin-left: 2rem;
+        }
   }
