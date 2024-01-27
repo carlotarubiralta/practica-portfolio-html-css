@@ -1,0 +1,36 @@
+.banner {
+    height: 50dvh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .banner__content {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .banner__image {
+    position: absolute;
+    opacity: 0.3;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url('../images/star-wars-luke-skywalker-return-of-the-jedi-550x309.jpeg');
+    background-size: cover;
+    background-position-x: center;
+  }
+  @media (width > 768px) {
+    .banner {
+        height: 75dvh;
+        margin-top: 0px;
+    }
+    .banner__image {
+        background-image: url('../images/luke-skywalker-and-darth-vader-in-star-wars-episode-vi-return-of-the-jedi.jpg');
+    }
+
+}

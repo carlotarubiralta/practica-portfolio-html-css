@@ -4,7 +4,7 @@
     position: sticky;
     top: 0;
     display: flex;
-    padding: 0.8rem 5rem;
+    padding: 0.8rem 2rem;
     justify-content:space-between;
     align-items: center;
 }
@@ -33,9 +33,8 @@
     gap: 50px;
   }
 
-  @media (width > 768px) { /* breakpoints */
-    /* @media (min-width: 768px) {*/
-      .header__nav .header__nav__list .header__nav__list__item.hidden {
-        display: block;
-      }
+  @media (width > 768px) { 
+    .header {
+      padding: 0.8rem 5rem;
     }
+  }
