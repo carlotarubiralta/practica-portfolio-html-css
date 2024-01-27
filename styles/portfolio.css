@@ -1,0 +1,45 @@
+.video__section {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 768px;
+    animation: fadeIn ease 5s;
+  }
+  @keyframes fadeIn{
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+  
+  .video__section .info__video {
+    position: relative;
+  }
+
+  .video__section img, .video__section video {
+    max-width: 100%;
+  }
+  
+  .video__section .info__video video {
+    position: absolute;
+    left:0px;
+    max-width: 100%;
+  }
+  
+  .video__section .info__video img {
+    z-index: 2;
+    position: relative;
+    max-width: 100%;
+  }
+
+  @media (width > 768px) {
+
+    .video__section {
+        max-width: 70%;
+    }
+    .video__section .info__video video {
+      left: 0px;
+      width: 100%;
+    }
+  }
