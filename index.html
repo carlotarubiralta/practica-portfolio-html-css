@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles/banner.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/info.css">
-    <link rel="stylesheet" href="styles/shows.css">
+    <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
     <header class="header">
@@ -91,6 +91,91 @@
           </div>
         </div>
       </section>
+      <section class="banner">
+        <div class="banner__image"></div>
+        <div class="banner__content">
+          <h2>You've Failed, Your Highness. I Am A Jedi, Like My Father Before Me</h2>
+        </div>
+      </section>
+      <section class="container__form">
+        
+        <form method="post" action="/">
+          <div class="form__element__row">
+            <div class="row">
+            <label class="form__label" for="name">Nombre *</label>
+            <input class="form__input" name="name" id="name" type="name" placeholder="Darth" required>
+            </div>
+
+            <div class="row">
+            <label class="form__label" for="last__name">Apellido *</label>
+            <input class="form__input" name="last__name" id="last__name" type="last__name" placeholder="Vader" required>
+            </div>
+          
+            <div class="row">
+            <label class="form__label" for="phone">Teléfono *:</label>
+            <input
+              class="form__input"
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              placeholder="678 67 67 67"
+              pattern="([0-9]{3} [0-9]{2} [0-9]{2} [0-9]{2})|([0-9]{9})"
+              title="Formato 678 67 67 67"
+              required>
+            </div>
+
+            <div class="row">
+            <label class="form__label" for="username">Github usuario</label>
+            <input class="form__input" 
+            type="text"
+            name="username"
+            id="username"
+            placeholder="'@<username>'"
+            pattern="^@[^\s]+"
+            >
+            </div>
+          </div>
+        <div class="form__element">
+          <fieldset class="item_list">
+            <legend>¿Cómo me conociste?</legend>
+            <div class="form__element__radio__list">
+              <div>
+              <label for="uni">Universidad</label>
+              <input type="radio" id="uni" name="source" value="uni" checked required>
+              </div>
+              <div>
+              <label for="keepcoding">Keepcoding kick-off</label>
+              <input type="radio" id="keepcoding" name="source" value="keepcoding">
+              </div>
+              <div>
+              <label for="school">Colegio</label>
+              <input type="radio" id="school" name="source" value="school">
+              </div>
+              <div>
+              <label for="github">En Github</label>
+              <input type="radio" id="github" name="source" value="github">
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form__element">
+            <label class="form__label" for="info">Más información *</label>
+            <textarea class="form__input" name="info" id="info" maxlength="180" required placeholder="¿Quieres compartir algo más">
+            
+            </textarea>
+        </div>
+        <div class="form__element form__element--checkbox">
+            <label class="form__label" for="newsletter">Quiero recibir la newsletter</label>
+            <input type="checkbox" name="newsletter" id="newsletter" value="selected" checked>
+        </div>
+
+        <div>
+          <input class="btn" type="submit" value="Guardar">
+          <input class="btn btn--secondary" type="reset" value="Borrar">
+        </div>
+      </form>
+    </section>
         
     </main>
     <footer>
