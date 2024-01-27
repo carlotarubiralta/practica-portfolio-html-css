@@ -33,6 +33,26 @@
     max-width: 100%;
   }
 
+  .movies__section h1 {
+    text-align: center;
+  }
+
+  .movies__container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .movies__container .movie__item {
+    margin: 10px auto;
+    text-align: center;
+}
+
+  .movie__item img{
+    max-width: 100%;
+  }
+
   @media (width > 768px) {
 
     .video__section {
@@ -41,5 +61,16 @@
     .video__section .info__video video {
       left: 0px;
       width: 100%;
+    }
+    .movies__container{
+
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+    .movies__container .movie__item {
+        margin: 10px auto;
+        text-align: center;
     }
   }
