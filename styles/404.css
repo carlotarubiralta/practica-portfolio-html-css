@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
     padding: 0 1em;
 }
 .error__image {
@@ -38,6 +37,10 @@
 }
 .btn__404 h2 {
     font-weight: 800;
+
+}
+.btn__404 a {
+    text-decoration: none;
 }
 
 @media ( width > 768px ) {
