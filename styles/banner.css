@@ -26,8 +26,7 @@
   }
   @media (width > 768px) {
     .banner {
-        height: 75dvh;
-        margin-top: 0px;
+      margin-top: 0px;
     }
     .banner__image {
         background-image: url('../images/luke-skywalker-and-darth-vader-in-star-wars-episode-vi-return-of-the-jedi.jpg');

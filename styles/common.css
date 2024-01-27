@@ -6,8 +6,21 @@
     font-family: sans-serif;
     --main-primary-color: #21ebff;
 }
-
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+}
 html {
     background-color: var(--bg-color);
     color: var(--main-text-color);
+}
+* {
+    box-sizing: border-box;
 }
