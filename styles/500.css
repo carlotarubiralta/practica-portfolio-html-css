@@ -33,7 +33,6 @@
     margin-top: 3em;
     background-color: var(--main-brand-color);
     padding: 5px;
-
 }
 .btn__500 h2 {
     font-weight: 800;
@@ -45,12 +44,11 @@
 @media ( width > 768px ) {
     .background__500{
         height: 100dvh;
-}
+    }
 .btn__500 {
     margin-top: 3em;
     background-color: var(--main-brand-color);
-
-}
+    }
 }
 @media (hover: hover) {
     .btn__500:hover {

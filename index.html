@@ -24,27 +24,25 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__image">
-            <a href="index.html"><img src="images/logo.png" alt=""></a>
-        </div>
+      <div class="header__image">
+          <a href="index.html"><img src="images/logo.png" alt=""></a>
+      </div>
 
-        <nav class="header__nav">
-          <input type="checkbox" id="menu-toggle" class="menu-toggle">
-          <label for="menu-toggle" class="menu-icon">&#9776;</label>
-          <ul class="header__nav__list">
-            <li class="header__nav__list__item">
-              <a class="menu__item" href="#habilidades">Habilidades</a>
-            </li>
-            <li class="header__nav__list__item">
-              <a class="menu__item" href="portfolio.html">Películas</a>
-            </li>
-            <li class="header__nav__list__item">
-              <a class="menu__item" href="contacto">Contacto</a>
-            </li>
-          </ul>
-        </nav>
-
-
+      <nav class="header__nav">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="header__nav__list">
+          <li class="header__nav__list__item">
+            <a class="menu__item" href="#habilidades">Habilidades</a>
+          </li>
+          <li class="header__nav__list__item">
+            <a class="menu__item" href="portfolio.html">Películas</a>
+          </li>
+          <li class="header__nav__list__item">
+            <a class="menu__item" href="contacto">Contacto</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section class="about">
@@ -53,15 +51,15 @@
         </div>
         <div class="about__column__2">
           <div>
-          <h1>Luke Skywalker</h1>
-          <p>Soy <strong>Luke Skywalker</strong>, nacido en Tatooine, hijo de Anakin Skywalker y Padmé Amidala. 
-          
-          Criado bajo el ardiente sol de los desiertos, mi vida cambió al descubrir mi herencia Jedi. Guiado por maestros como <strong>Obi-Wan Kenobi</strong> y <strong>Yoda</strong>, enfrenté desafíos que me llevaron desde las profundidades del miedo hasta la redención de mi padre. 
-          
-          Como líder en la Rebelión, luché contra el Imperio, descubriendo en el camino el verdadero significado del valor y la fuerza. 
-          
-          Mi viaje no es solo sobre batallas y la Fuerza; es una historia de crecimiento, esperanza y legado.</p>
-          <h2 id="habilidades">Mis habilidades</h2>
+            <h1>Luke Skywalker</h1>
+            <p>Soy <strong>Luke Skywalker</strong>, nacido en Tatooine, hijo de Anakin Skywalker y Padmé Amidala. 
+            
+            Criado bajo el ardiente sol de los desiertos, mi vida cambió al descubrir mi herencia Jedi. Guiado por maestros como <strong>Obi-Wan Kenobi</strong> y <strong>Yoda</strong>, enfrenté desafíos que me llevaron desde las profundidades del miedo hasta la redención de mi padre. 
+            
+            Como líder en la Rebelión, luché contra el Imperio, descubriendo en el camino el verdadero significado del valor y la fuerza. 
+            
+            Mi viaje no es solo sobre batallas y la Fuerza; es una historia de crecimiento, esperanza y legado.</p>
+            <h2 id="habilidades">Mis habilidades</h2>
           </div>
           <div class="skills">
             <div class="container">
@@ -110,19 +108,16 @@
         </div>
       </section>
       <section class="container__form">
-        
         <form method="post" action="/">
           <div class="form__element__row">
             <div class="row">
             <label class="form__label" for="name">Nombre *</label>
             <input class="form__input" name="name" id="name" type="name" placeholder="Darth" required>
             </div>
-
             <div class="row">
             <label class="form__label" for="last__name">Apellido *</label>
             <input class="form__input" name="last__name" id="last__name" type="last__name" placeholder="Vader" required>
             </div>
-          
             <div class="row">
             <label class="form__label" for="phone">Teléfono *:</label>
             <input
@@ -136,7 +131,6 @@
               title="Formato 678 67 67 67"
               required>
             </div>
-
             <div class="row">
             <label class="form__label" for="username">Github usuario</label>
             <input class="form__input" 
@@ -148,52 +142,50 @@
             >
             </div>
           </div>
-        <div class="form__element">
-          <fieldset class="item_list">
-            <legend>¿Cómo me conociste?</legend>
-            <div class="form__element__radio__list">
-              <div>
-              <label for="uni">Universidad</label>
-              <input type="radio" id="uni" name="source" value="uni" checked required>
+          <div class="form__element">
+            <fieldset class="item_list">
+              <legend>¿Cómo me conociste?</legend>
+              <div class="form__element__radio__list">
+                <div>
+                <label for="uni">Universidad</label>
+                <input type="radio" id="uni" name="source" value="uni" checked required>
+                </div>
+                <div>
+                <label for="keepcoding">Keepcoding kick-off</label>
+                <input type="radio" id="keepcoding" name="source" value="keepcoding">
+                </div>
+                <div>
+                <label for="school">Colegio</label>
+                <input type="radio" id="school" name="source" value="school">
+                </div>
+                <div>
+                <label for="github">En Github</label>
+                <input type="radio" id="github" name="source" value="github">
+                </div>
               </div>
-              <div>
-              <label for="keepcoding">Keepcoding kick-off</label>
-              <input type="radio" id="keepcoding" name="source" value="keepcoding">
-              </div>
-              <div>
-              <label for="school">Colegio</label>
-              <input type="radio" id="school" name="source" value="school">
-              </div>
-              <div>
-              <label for="github">En Github</label>
-              <input type="radio" id="github" name="source" value="github">
-              </div>
-            </div>
-          </fieldset>
-        </div>
-        <div class="form__element">
-            <label class="form__label" for="info">Más información *</label>
-            <textarea class="form__input" name="info" id="info" maxlength="180" required placeholder="¿Quieres compartir algo más">
-            
-            </textarea>
-        </div>
-        <div class="form__element form__element--checkbox">
-            <label class="form__label" for="newsletter">Quiero recibir la newsletter</label>
-            <input type="checkbox" name="newsletter" id="newsletter" value="selected" checked>
-        </div>
-
-        <div>
-          <input class="btn" type="submit" value="Guardar">
-          <input class="btn btn--secondary" type="reset" value="Borrar">
-        </div>
-      </form>
-    </section>
-        
+            </fieldset>
+          </div>
+          <div class="form__element">
+              <label class="form__label" for="info">Más información *</label>
+              <textarea class="form__input" name="info" id="info" maxlength="180" required placeholder="¿Quieres compartir algo más">
+              
+              </textarea>
+          </div>
+          <div class="form__element form__element--checkbox">
+              <label class="form__label" for="newsletter">Quiero recibir la newsletter</label>
+              <input type="checkbox" name="newsletter" id="newsletter" value="selected" checked>
+          </div>
+          <div>
+            <input class="btn" type="submit" value="Guardar">
+            <input class="btn btn--secondary" type="reset" value="Borrar">
+          </div>
+        </form>
+      </section>
     </main>
-    <footer class="footer">
-      <a href="https://www.instagram.com/luke-skywalker" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://www.youtube.com/luke-skywalker" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://www.twitter.com/luke-skywalker" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-    </footer>
+  <footer class="footer">
+    <a href="https://www.instagram.com/luke-skywalker" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.youtube.com/luke-skywalker" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.twitter.com/luke-skywalker" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+  </footer>
 </body>
 </html>

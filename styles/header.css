@@ -9,91 +9,84 @@
     align-items: center;
 }
   
-  .header .header__image {
-    width: 150px;
-    max-width: 150px;
-  }
-  
+.header .header__image {
+  width: 150px;
+  max-width: 150px;
+}
+
+.header .header__image img {
+  width: 60%;
+}
+
+.header .header__nav {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.header .header__nav .header__nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 0px;
+}
+#menu-toggle {
+  display: none;
+}
+.menu-icon {
+  display: none;
+}
+
+@media (width < 768px) {
   .header .header__image img {
-    width: 60%;
-  }
-
-  .header .header__nav {
-    display: inline-flex;
-    justify-content: space-around;
-    align-items: center;
-
-  }
-  
-  .header .header__nav .header__nav__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 0px;
+    width: 30%;
   }
   #menu-toggle {
     display: none;
   }
   .menu-icon {
+    display: block;
+    padding: 0.3em;
+    background: #fff;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .header__nav__list {
+    position: absolute;
+    top: 100%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 100%; 
+    background-color: #0000009d; 
+    display: none; 
+    z-index: 15; 
+  }
+  .header .header__nav .header__nav__list {
     display: none;
   }
-
-  @media (width < 768px) {
-    .header .header__image img {
-      width: 30%;
-    }
-    #menu-toggle {
-      display: none;
-    }
-    .menu-icon {
-      display: block;
-      padding: 0.3em;
-      background: #fff;
-      color: #000;
-      font-size: 20px;
-      cursor: pointer;
-    }
-    .header__nav__list {
-      position: absolute;
-      top: 100%; /* Coloca el menú debajo del icono */
-      left: 50%; /* Comienza en el centro horizontalmente */
-      transform: translateX(-50%); /* Centra el menú horizontalmente */
-      width: 100%; /* Ancho del menú, ajusta según necesites */
-      background-color: #0000009d; /* Fondo negro */
-      display: none; /* Oculta inicialmente */
-      z-index: 15; /* Asegura que el menú esté por encima de otros elementos */
+  #menu-toggle:checked + .menu-icon + .header__nav__list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    gap:10px;
   }
-    .header .header__nav .header__nav__list {
-      display: none;
-    }
-    
-    /* Opcional: Puede que quieras un estilo diferente para el icono cuando el menú esté activo */
- 
-    #menu-toggle:checked + .menu-icon + .header__nav__list {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-content: center;
-      gap:10px;
+.header__nav__list a {
+  color: white; /* o cualquier otro color que prefieras */
+  padding: 0.5em 1em; /* Ajusta el espaciado */
   }
-  .header__nav__list a {
-    color: white; /* o cualquier otro color que prefieras */
-    padding: 0.5em 1em; /* Ajusta el espaciado */
-  }
-
-
 }
-   
   
-
-  @media (width > 768px) { 
-    .header {
-      padding: 0.8rem 5rem;
-    }
-    .menu-icon {
-      display: none;
-    }
+@media (width > 768px) { 
+  .header {
+    padding: 0.8rem 5rem;
   }
+  .menu-icon {
+    display: none;
+  }
+}
 

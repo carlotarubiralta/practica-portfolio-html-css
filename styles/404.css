@@ -33,7 +33,6 @@
     margin-top: 3em;
     background-color: var(--main-brand-color);
     padding: 5px;
-
 }
 .btn__404 h2 {
     font-weight: 800;
@@ -46,12 +45,11 @@
 @media ( width > 768px ) {
     .error__background{
         height: 100dvh;
-}
+    }
 .btn__404 {
     margin-top: 3em;
     background-color: var(--main-brand-color);
-
-}
+    }
 }
 @media (hover: hover) {
     .btn__404:hover {

@@ -37,7 +37,6 @@
         color: #fff;
         border-radius: 50px;
     }
-
     .btn:hover {
         box-shadow: 0px 0px 15px 8px #21ebff;
         background-color: transparent;
@@ -46,6 +45,4 @@
     .btn.btn--secondary:hover{
         background-color: var(--main-primary-color);
     }
-
-
 }
