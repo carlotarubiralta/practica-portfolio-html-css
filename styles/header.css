@@ -83,10 +83,11 @@
   
 @media (width > 768px) { 
   .header {
-    padding: 0.8rem 5rem;
+    padding: 0.1rem 0.8rem;
   }
   .menu-icon {
     display: none;
   }
 }
+
 
