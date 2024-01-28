@@ -25,3 +25,11 @@ html {
     box-sizing: border-box;
 }
 
+a {
+    color: var(--main-text-color)
+}
+
+a:hover {
+    color: var(--bg-color)
+}
+
