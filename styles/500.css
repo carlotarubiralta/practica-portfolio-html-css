@@ -1,5 +1,5 @@
 .background__500{
-    height: 100dvh;
+    height: 100vh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -42,12 +42,9 @@
 }
 
 @media ( width > 768px ) {
-    .background__500{
-        height: 100dvh;
-    }
-.btn__500 {
-    margin-top: 3em;
-    background-color: var(--main-brand-color);
+    .btn__500 {
+        margin-top: 3em;
+        background-color: var(--main-brand-color);
     }
 }
 @media (hover: hover) {
