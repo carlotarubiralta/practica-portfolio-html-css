@@ -19,19 +19,8 @@
   position: relative;
 }
 
-.video__section img,
 .video__section video {
   max-width: 100%;
-}
-
-.video__section .info__video video {
-  position: absolute;
-  left: 0px;
-}
-
-.video__section .info__video img {
-  z-index: 2;
-  position: relative;
 }
 
 .movies__section h1 {
