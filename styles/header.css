@@ -49,7 +49,7 @@
   .menu-icon {
     display: block;
     padding: 0.3em;
-    background: var(--main-text-color);
+    background: var(--bg-color);
     color: --bg-color;
     font-size: 20px;
     cursor: pointer;
