@@ -13,7 +13,7 @@
 
   @media (hover: hover) {
         .fa-brands:hover {
-                color: #000;
+                color: var(--bg-color);
         }
   }
 

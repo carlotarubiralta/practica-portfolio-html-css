@@ -52,7 +52,7 @@
 }
 @media (hover: hover) {
     .btn__500:hover {
-        background-color: #fff;
+        background-color: var(--main-text-color);
         color: var(--main-brand-color);
     }
 }

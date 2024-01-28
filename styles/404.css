@@ -53,7 +53,7 @@
 }
 @media (hover: hover) {
     .btn__404:hover {
-        background-color: #fff;
+        background-color: vra(--main-text-color);
         color: var(--main-brand-color);
     }
 }
